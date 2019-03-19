@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("button").click(function () {
+			var div = $("div");
+			div.animate({height: '300px', opacity: '0.4',},"slow");
+			div.animate({width: '300px', opacity: '0.8',},"slow");
+			div.animate({height: '100px', opacity: '0.4',},"slow");
+			div.animate({width: '100px', opacity: '0.8',},"slow");	
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<button>Start animation</button>
+	<p>Penjelasan</p>
+
+	<div style="background: red;height: 100px;width: 100px;"></div>
+
+</body>
+</html>

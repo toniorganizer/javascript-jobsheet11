@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).click(function () {
+			$("#flip").click(function () {
+				$("#panel").slideUp("slow");
+			});
+		});
+	</script>
+	<style>
+		#panel, #flip{
+			padding: 5px;
+			text-align: center;
+			background-color: blue;
+			border:solid 1px black;
+		}
+		#panel{
+			padding: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="flip">Click  to slide up panel</div>
+	<div id="panel">Hello word!</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("div").animate({
+					height:'toggle',
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<button>start animation</button>
+
+	<p>toggle animayion</p>
+
+	<div style="background: red;height: 100px;width: 100px;position: absolute;"></div>
+
+</body>
+</html>
